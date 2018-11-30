@@ -1,0 +1,98 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background:url("./../img/sky.png")  100% 100%;
+    margin: 0;
+    padding:0;
+    height: 100%;
+    font: 14px/1.5"lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+svg{
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+/*
+结构：
+body
+     .container
+        header .item
+            .navigation-content
+            .nav-erweima
+        .center-content
+            .center-left
+            .center-right
+        .footer-copyright
+            span
+            span
+*/
+
+/*1920大屏*/
+@media screen and (min-width :1441px){
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+/*=======header=======*/
+header{
+    color:white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex:0 0 25%;
+}
+
+.navigation-content{
+    list-style: none;
+    display: flex;
+    flex: 0 0 80%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigation-content li{
+    width: 100px;
+}
+
+.nav-erweima{
+}
+.icon-erweima{
+
+}
+
+
+
+/*=======center=======*/
+.center-content{
+    color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*=======footer=======*/
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-copyright{
+    color: white;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
